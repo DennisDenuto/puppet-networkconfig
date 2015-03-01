@@ -1,4 +1,5 @@
 # This is a placeholder class.
-class template {
+
+class networkconfig {
   anchor { 'Hello_World': }
 }
