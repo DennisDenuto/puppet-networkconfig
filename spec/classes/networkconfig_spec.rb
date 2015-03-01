@@ -3,7 +3,7 @@ require 'spec_helper'
 # Check other boxen modules for examples
 # or read http://rspec-puppet.com/tutorial/
 describe 'networkconfig' do
-  it do
-    should contain_anchor('Hello_World')
-  end
+    it do
+        should contain_anchor('Hello_World')
+    end
 end
