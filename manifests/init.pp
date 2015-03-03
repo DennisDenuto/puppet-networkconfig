@@ -1,5 +1,12 @@
 # This is a placeholder class.
 
 class networkconfig {
-  anchor { 'Hello_World': }
+  file { '/etc/pf.anchors/com.apple':
+    source => 'puppet://pf.anchors/com.apple',
+  }
+
+  file { '/etc/pf.anchors/myEthernetNATRules':
+    source => 'puppet://pf.anchors/myEthernetNATRules',
+  }
+
 }

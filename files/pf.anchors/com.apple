@@ -1,0 +1,24 @@
+#
+# com.apple ruleset, referred to by the default /etc/pf.conf file.
+# See notes in that file regarding the anchor point in the main ruleset.
+#
+# Copyright (c) 2011 Apple Inc. All rights reserved.
+#
+
+#
+# nat for ethernet.
+#
+nat-anchor "100.myEthernetNATRules/*"
+rdr-anchor "100.myEthernetNATRules/*"
+load anchor "100.myEthernetNATRules" from "/etc/pf.anchors/myEthernetNATRules"
+#
+# AirDrop anchor point.
+#
+anchor "200.AirDrop/*"
+
+#
+# Application Firewall anchor point.
+#
+anchor "250.ApplicationFirewall/*"
+
+

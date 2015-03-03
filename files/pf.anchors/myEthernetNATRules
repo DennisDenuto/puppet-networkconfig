@@ -1,0 +1,2 @@
+nat on en1 from 169.254.0.0/16 to any -> (en1)
+    pass from {lo0, 169.254.0.0/16} to any keep state

@@ -3,7 +3,9 @@ require 'spec_helper'
 # Check other boxen modules for examples
 # or read http://rspec-puppet.com/tutorial/
 describe 'networkconfig' do
+    context "pf config files"
     it do
-        should contain_anchor('Hello_World')
+        should contain_file("/etc/pf.anchors/com.apple")
+        should contain_file("/etc/pf.anchors/myEthernetNATRules")
     end
 end
