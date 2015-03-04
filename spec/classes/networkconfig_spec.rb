@@ -3,9 +3,8 @@ require 'spec_helper'
 # Check other boxen modules for examples
 # or read http://rspec-puppet.com/tutorial/
 describe 'networkconfig' do
-    context "pf config files"
+    context "nat class present"
     it do
-        should contain_file("/etc/pf.anchors/com.apple")
-        should contain_file("/etc/pf.anchors/myEthernetNATRules")
+        should contain_class("networkconfig::nat")
     end
 end
